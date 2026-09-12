@@ -51,7 +51,7 @@ main h1 {
     background-color: #1f5a7a;
     color: white;
     text-align: center;
-    margin-top: -15px -15px 15px -15px;
+    margin: -15px -15px 15px -15px;
     padding: 10px;
 }
 
