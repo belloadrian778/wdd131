@@ -1,0 +1,49 @@
+header {
+    background-color:gray;;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+main {
+    min-height: 230px;     ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+section {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+aside {
+    background-color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: gray;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    text-decoration:none;
+}
+header h1{
+    font-size: 24px;
+    margin: 0;
+    padding:20px;
+}
+
+body {
+    display: grid;
+}
