@@ -2,11 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+
 header {
     background-color: #3b0a57;
     color: white;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,6 +33,7 @@ nav.show {
     display: block;
 }
 
+
 #menu {
     display: block;
     background: none;
@@ -35,8 +41,8 @@ nav.show {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    justify-self: end;
 }
-
 
 .gallery {
     display: grid;
@@ -77,20 +83,10 @@ footer p {
     margin: 0.25rem;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-}
-
 header h1 {
     margin: 0;
 }
 
 #navigation {
     grid-column: 1 / -1;
-}
-
-#menu {
-    justify-self: end;
 }
