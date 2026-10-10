@@ -19,9 +19,8 @@ header {
 
 main {
     max-width: 600px;
-    margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    border-radius: 8px;
 }
 
 footer {
@@ -95,12 +94,6 @@ fieldset label {
 
 fieldset {
     line-height: 1.8;
-}
-
-
-main {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 input:focus-visible,
