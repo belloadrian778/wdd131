@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form">
+    <meta name="author" content="Adrian Bello">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+
+        <form method="get" action="review.html">
+            
+            <label for="product">Product Name *</label>
+
+            <select id="product" name="product" required>
+                <option value="" disabled selected>
+                    Select a Product ...
+                </option>
+            </select>
+            
+            
+            <fieldset class="rating">
+                <legend>Overall Rating *</legend>               
+                <div>
+                    <label for="rating1">1 Star</label>
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                </div>
+                <div>
+                    <label for="rating2">2 Stars</label>
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </div>
+
+                <div>
+                    <label for="rating3">3 Stars</label>
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </div>
+                <div>
+                    <label for="rating4">4 Stars</label>
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </div>
+                <div>
+                    <label for="rating5">5 Stars</label>
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </div>
+            </fieldset>
+            <label for="installationDate">Date of Installation *</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+            
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>             
+                <div>
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="easeOfUse" name="features" value="ease-of-use">
+                    <label for="easeOfUse">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>    
+            
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview" rows="5"></textarea>
+   
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Adrian Bello</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

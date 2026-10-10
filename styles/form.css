@@ -1,0 +1,161 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form > label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: #243b55;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #345779;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #243b55;
+    cursor: pointer;
+}
+
+fieldset label {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+fieldset {
+    line-height: 1.8;
+}
+
+
+main {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #345779;
+    outline-offset: 2px;
+}
+
+
+.rating {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.rating legend {
+    text-align: left;
+}
+
+.rating label {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.rating input {
+    margin: 0 auto;
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.features legend {
+    margin-bottom: 15px;
+}
+
+
+.rating > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating label {
+    white-space: nowrap;
+    font-size: 0.75rem;
+}
+
+.rating input[type="radio"] {
+    width: 18px;
+    height: 18px;
+}
