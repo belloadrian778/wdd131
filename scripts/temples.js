@@ -7,6 +7,8 @@ menuButton.addEventListener("click", function () {
 
     const isOpen = navigation.classList.contains("show");
     menuButton.setAttribute("aria-expanded", String(isOpen));
+
+    menuButton.textContent = isOpen ? "✕" : "☰";
 });
 
 // Footer - Current Year
