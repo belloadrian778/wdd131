@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Brazil, including country facts and weather.">
+    <meta name="author" content="Adrian Bello">
+    <title>Brazil | Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header> 
+    <main>
+        <div class="hero">         
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/brazil-small.webp">
+                <img
+                    src="images/brazil-large.webp"
+                    srcset="images/brazil-large.webp"
+                    alt="Iguazu Falls in Brazil"
+                    width="738"
+                    height="411">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 8,515,767 km²</p>
+            <p><strong>Population:</strong> 213 million</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Languages:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+            <p><strong>Time Zone:</strong> UTC-3 (Brasília)</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg"
+                alt="Partly cloudy weather"
+                class="weather-icon">
+            <p><strong>Temperature:</strong> 25°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 10 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+        </section>
+    </main> 
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Adrian Bello | Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
