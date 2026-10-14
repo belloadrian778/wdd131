@@ -29,7 +29,7 @@ nav a:hover {
 nav {
     display: none;
 }
-nav.show {
+nav.open {
     display: block;
 }
 
@@ -44,11 +44,6 @@ nav.show {
     justify-self: end;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
 
 
 main {
