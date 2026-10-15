@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about essential vehicle maintenance services and how to keep your car in good condition.">
+    <meta name="author" content="Adrian Bello">
+    <title>Maintenance Guide | My Car Maintenance</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/guide.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">My Car Maintenance</a>
+
+            <button id="menu" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tracker.html">Maintenance Tracker</a></li>
+                    <li><a href="guide.html" aria-current="page">Maintenance Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="guide-intro">
+            <h1>Vehicle Maintenance Guide</h1>
+            <p>Learn how regular maintenance can help keep
+                your vehicle safe and reliable.</p>
+        </section>
+
+        <section class="guide-section">
+            <h2>Explore Maintenance Services</h2>
+            <p>Select a category to learn more about
+                important vehicle maintenance tasks.</p>
+
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All Services</option>
+                <option value="engine">Engine</option>
+                <option value="safety">Safety</option>
+                <option value="electrical">Electrical</option>
+            </select>
+
+            <div id="guide-cards" class="guide-grid"></div>
+        </section>
+
+        <section class="guide-section">
+            <h2>Maintenance Reminder</h2>
+            <p>Always follow the maintenance schedule
+                recommended in your vehicle owner's manual.</p>
+            <p>Service intervals may vary depending on
+                driving conditions, vehicle age, and manufacturer.</p>
+
+            <a href="tracker.html" class="button">
+                Track Your Maintenance
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            My Car Maintenance | Adrian Bello</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

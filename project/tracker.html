@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Record your vehicle maintenance services and track car repair expenses.">
+    <meta name="author" content="Adrian Bello">
+    <title>Maintenance Tracker | My Car Maintenance</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/tracker.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">My Car Maintenance</a>
+
+            <button id="menu" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tracker.html" aria-current="page">Maintenance Tracker</a></li>
+                    <li><a href="guide.html">Maintenance Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tracker-intro">
+            <h1>Maintenance Tracker</h1>
+            <p>Record your vehicle services and keep track
+                of your maintenance expenses.</p>
+        </section>
+
+        <section class="tracker-section">
+            <h2>Add Maintenance Record</h2>
+
+            <form id="maintenance-form">
+                <label for="service">Service Type</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Oil Change">Oil Change</option>
+                    <option value="Tire Rotation">Tire Rotation</option>
+                    <option value="Brake Service">Brake Service</option>
+                    <option value="Air Filter">Air Filter</option>
+                    <option value="Battery Replacement">Battery Replacement</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="date">Service Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="mileage">Mileage</label>
+                <input type="number" id="mileage" name="mileage"
+                    min="0" step="1" required>
+
+                <label for="cost">Service Cost ($)</label>
+                <input type="number" id="cost" name="cost"
+                    min="0" step="0.01" required>
+
+                <button type="submit" class="button">
+                    Add Maintenance
+                </button>
+            </form>
+        </section>
+
+        <section class="tracker-section">
+            <h2>Maintenance Summary</h2>
+            <p>Total Expenses: <strong id="total-expenses">$0.00</strong></p>
+            <p>Services Recorded: <strong id="service-count">0</strong></p>
+        </section>
+
+        <section class="tracker-section">
+            <h2>Service History</h2>
+            <div id="maintenance-list">
+                <p>No maintenance records yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            My Car Maintenance | Adrian Bello</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

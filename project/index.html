@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your vehicle maintenance, manage service expenses, and learn how to take care of your car.">
+    <meta name="author" content="Adrian Bello">
+    <title>My Car Maintenance | Home</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">My Car Maintenance</a>
+
+            <button id="menu" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+                &#9776;
+            </button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="tracker.html">Maintenance Tracker</a></li>
+                    <li><a href="guide.html">Maintenance Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Keep Your Car Running Smoothly</h1>
+            <p>Track your vehicle maintenance, manage expenses,
+                and stay organized with My Car Maintenance.</p>
+            <a class="button" href="tracker.html">Start Tracking</a>
+        </section>
+
+        <section class="introduction">
+            <h2>Why Is Car Maintenance Important?</h2>
+            <p>Regular vehicle maintenance helps prevent expensive
+                repairs, improves safety, and keeps your car
+                running efficiently.</p>
+            <p>Our website makes it easy to record maintenance
+                services, manage expenses, and learn how to
+                take better care of your vehicle.</p>
+        </section>
+
+        <section class="services">
+            <h2>Common Maintenance Services</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <img
+                        src="images/oil-change.webp"
+                        alt="Mechanic changing engine oil"
+                        loading="lazy"
+                        width="400"
+                        height="300">
+                    <h3>Oil Changes</h3>
+                    <p>Regular oil changes help protect your engine
+                        and maintain its performance.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/brake-inspection.webp"
+                        alt="Mechanic checking brakes"
+                        loading="lazy"
+                        width="400"
+                        height="300">
+                    <h3>Tire Maintenance</h3>
+                    <p>Checking tire pressure and tire condition
+                        improves safety and helps reduce wear.</p>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="images/tire-maintenance.webp"
+                        alt="Mechanic checking tire"
+                        loading="lazy"
+                        width="400"
+                        height="300">
+                    <h3>Brake Inspections</h3>
+                    <p>Regular brake inspections help identify
+                        problems and keep your vehicle safe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Take Control of Your Car Maintenance</h2>
+            <p>Start recording your maintenance history and
+                keep track of your expenses today.</p>
+            <a class="button" href="tracker.html">Track Maintenance</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span>
+            My Car Maintenance | Adrian Bello</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
